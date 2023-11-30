@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte Callejero</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #banner {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        #banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #banner h2 {
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        #banner p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #bdc3c7;
+        }
+
+        #banner button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #featured {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #featured h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        #sobre {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #ecf0f1;
+        }
+
+        #sobre h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        #sobre p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galería de Arte Callejero</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <img src="banner.jpg" alt="Banner de la galería">
+            <h2>Vende tus cuadros de estilo graffity</h2>
+            <p>Recopilamos los mejores trabajos de arte urbano para llevarlos a tu hogar</p>
+            <button onclick="location.href='#catalogo'">Explora nuestro catálogo</button>
+        </section>
+
+        <section id="featured">
+            <h3>Obras destacadas</h3>
+            <!-- Aquí se generarán los productos -->
+        </section>
+
+        <section id="sobre">
+            <h3>Sobre nosotros</h3>
+            <p>Información sobre la galería</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Galería de Arte Callejero</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
